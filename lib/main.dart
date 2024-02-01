@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:infolks/view/auth/login_screen.dart';
+import 'package:infolks/view/auth/register_screen.dart';
 import 'package:infolks/view/home/home_screen.dart';
 import 'package:infolks/view/splash_screen.dart';
 
@@ -21,6 +23,8 @@ class MyApp extends StatelessWidget {
       ),
       home:  const SplashScreen(),
       routes: {
+        '/login':(context) =>  LoginScreen(),
+        '/register':(context) =>  RegisterScreen(),
         '/home':(context) => const HomeScreen(),
       },
     );

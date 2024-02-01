@@ -29,6 +29,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future<void> login() async {
     await Future.delayed(const Duration(seconds: 10));
-    Navigator.pushNamed(context, '/home');
+    Navigator.pushNamed(context, '/login');
   }
 }
