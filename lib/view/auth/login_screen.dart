@@ -56,7 +56,9 @@ class LoginScreen extends StatelessWidget {
           ),
           CustomButton(
             text: 'Login',
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/home');
+            },
           ),
         ],
       ),
